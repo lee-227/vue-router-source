@@ -27,7 +27,7 @@ export default class History {
   constructor(router) {
     this.router = router
     this.cb = null
-    this.current = createRoute(null, { patj: '/' })
+    this.current = createRoute(null, { path: '/' })
   }
   transitionTo(location, onComplete) {
     let route = this.router.match(location)
